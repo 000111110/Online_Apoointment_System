@@ -1,0 +1,201 @@
+<?php
+if(!isset($_SESSION))
+		{
+		session_start();
+		}
+	if(isset($_SESSION["system_usertype"]))
+	{
+		$this_system_usertype=$_SESSION["system_usertype"];
+		$this_system_username=$_SESSION["system_username"];
+	}
+	else
+	{
+		$this_system_usertype="guest";
+	}	
+
+include("connect.php");
+if(isset($_POST["btnsubmitadd"]))
+{
+	$sqlinsert_patient="INSERT INTO patient_details(Patient_ID ,First_Name,Last_Name,DOB,Address,Tp_no)
+								VALUES('".mysqli_real_escape_string($connect,$_POST["txtpatientid"])."',
+										'".mysqli_real_escape_string($connect,$_POST["txtPatientFirstName"])."',
+										'".mysqli_real_escape_string($connect,$_POST["txtPatientLastName"])."',
+										'".mysqli_real_escape_string($connect,$_POST["txtdob"])."',
+										'".mysqli_real_escape_string($connect,$_POST["txtaddress"])."',
+										'".mysqli_real_escape_string($connect,$_POST["txtmobile"])."')";
+	$resultinsert_patient=mysqli_query($connect,$sqlinsert_patient) or die("sql error in sql insert".mysqli_error($connect));	
+	if($resultinsert_patient)
+	{
+		$sqlinsert_login="INSERT INTO login_details(User_ID  ,Password,User_type)
+									VALUES('".mysqli_real_escape_string($connect,$_POST["txtpatientid"])."',
+											'".mysqli_real_escape_string($connect,$_POST["txtpassword"])."',
+											'".mysqli_real_escape_string($connect,"patient")."')";
+		$resultinsert_login=mysqli_query($connect,$sqlinsert_login) or die("sql error in sql insert".mysqli_error($connect));	
+		if($resultinsert_login)
+		{
+			echo '<script>alert("Account created successfully. Use the Patient-ID to login. your ID is "+"'.$_POST["txtpatientid"].'");
+			window.location.href="index.php?pg=login.php"; </script>';
+		}
+	}
+}
+
+?>
+<html>
+	<head>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	</head>
+	<body>
+	<?php
+			if(isset($_GET["option"]))
+			{
+				if($_GET["option"]=="add")
+				{
+					
+		?>
+				<div class="container d-flex justify-content-center align-content-center">
+				<form class="border shadow p-3 rounded" action="" method="POST">
+					
+					<h3><center>PATIENT &nbsp; REGISTRATION</center></h3>
+					
+					<table>
+						<tr>
+							<th>Patient ID</th>
+							<td>
+								<?php
+									$sqlgenerateid="SELECT Patient_ID FROM patient_details ORDER BY Patient_ID DESC LIMIT 1";
+									$resultgenerateid=mysqli_query($connect,$sqlgenerateid) or die("sql error in sql generate id".mysqli_error($connect));
+									if(mysqli_num_rows($resultgenerateid)==1)
+									{
+										$lastgeneratedid=mysqli_fetch_assoc($resultgenerateid);
+										$patientid=++$lastgeneratedid["Patient_ID"];
+									}
+									else
+									{
+										$patientid="PT000001";
+									}
+								?>
+								
+								<input type="text" class="form-control" value="<?php echo $patientid; ?>" readonly name="txtpatientid" id="txtpatientid" required>
+							</td>
+						</tr>					
+						<tr>
+							<th>First Name</th>
+							<td>
+								<input type="text" class="form-control" name="txtPatientFirstName" id="txtPatientFirstName"required>
+							</td>
+						</tr>
+						<tr>
+							<th>Last Name</th>
+							<td>
+								<input type="text" class="form-control" name="txtPatientLastName" id="txtPatientLastName"required>
+							</td>
+						</tr>
+						<tr>
+							<th>DOB</th>
+							<td>
+								<input type="date" class="form-control" name="txtdob" id="txtdob" required>
+							</td>
+						</tr>
+						<tr>
+							<th>Address</th>
+							<td>
+								<textarea class="form-control" name="txtaddress" id="txtaddress" required></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>Mobile No</th>
+							<td>
+								<input type="text" class="form-control" name="txtmobile" id="txtmobile" required>
+							</td>
+						</tr>
+						<tr>
+							<th>Set Password</th>
+							<td>
+								<input type="text" class="form-control" name="txtpassword" id="txtpassword" required>
+							</td>
+						</tr>
+											
+											
+						<tr>
+							<td colspan="2">
+								<center>
+									<a href="index.php"><input type="button" class="btn btn-light" name="btngoback" id="btngoback" value="Go Back"></a>
+									<input type="reset" class="btn btn-danger" name="btnreset" id="btnreset" value="Clear">
+									<input type="submit" class="btn btn-success" name="btnsubmitadd" id="btnsubmitadd" value="Save">
+								</center>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+
+			<?php
+					}
+					else if($_GET["option"]=="view")
+					{
+						echo'<div class="box-content">
+									<h3><center>Patients List<center></h3>
+									<table class="table table-striped">';
+										echo'<thead>
+											<tr>
+												<td>Patient ID</td>
+												<td>Name</td>
+												<td>Age</td>
+												<td>Address</td>
+												<td>Contact No</td>
+												<td>Action</td>
+											</tr>
+											</thead>';
+										echo'<tbody>';
+											$sqlview="SELECT * FROM patient_details";
+											$resultview=mysqli_query($connect,$sqlview) or die("sql error in sql view".mysqli_error($connect));
+											while($rowview=mysqli_fetch_assoc($resultview))
+											{
+												$initial_name = str_split($rowview["Last_Name"],1);
+												$DOB = strtotime($rowview["DOB"]);
+												$age = date("Y") - date("Y",$DOB);
+												echo'<tr>';
+												echo'<td>'.$rowview["Patient_ID"].'</td>';
+												echo'<td>'.$initial_name[0]."-".$rowview["First_Name"].'</td>';
+												echo'<td>'.$age.'</td>';
+												echo'<td>'.$rowview["Address"].'</td>';
+												echo'<td>'.$rowview["Tp_no"].'</td>';
+												echo'<td>';
+											//	echo'<a href="index.php?pg=patients.php&option=fullview&fullview_patientid='.$rowview["Patient_ID"].'"><button class="btn btn-info"> View Appointments </button></a> ';
+													echo'<a onclick="return confirm_delete()" href="index.php?pg=patients.php&option=delete&delete_patientid='.$rowview["Patient_ID"].'"><button class="btn btn-danger"> Delete Account</button></a>';
+												echo'</td>';
+												echo'</tr>';
+											}
+										echo'</tbody>';				
+							echo'</table>
+							</div>';
+					}
+					else if($_GET["option"]=="delete")
+					{
+						$get_patientid=$_GET["delete_patientid"];
+						
+						// delete patient details....
+							$sqldelete_main="DELETE FROM patient_details WHERE Patient_ID ='$get_patientid'";
+							$resultdelete_main=mysqli_query($connect,$sqldelete_main) or die("sql error in sql delete".mysqli_error($connect));
+						// delete patient login details....
+							$sqldelete_login="DELETE FROM login_details WHERE User_ID ='$get_patientid'";
+							$resultdelete_login=mysqli_query($connect,$sqldelete_login) or die("sql error in sql delete".mysqli_error($connect));
+						// delete patient appointments details....
+							$sqldelete_appointment="DELETE FROM appontment_details WHERE Patient_ID ='$get_patientid'";
+							$resultdelete_appointment=mysqli_query($connect,$sqldelete_appointment) or die("sql error in sql delete".mysqli_error($connect));
+						
+						if($resultdelete_main && $resultdelete_login && $resultdelete_appointment)
+						{
+							echo'<script>alert("SUCCESSFULLY DELETED");
+								window.location.href="index.php?pg=patients.php&option=view"; </script>';
+							
+						}
+					}
+				}
+			?>
+		
+	</body>
+</html>	

@@ -1,0 +1,911 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+*{
+	margin:auto;
+	padding:auto;
+}
+.top{
+	width:100%;
+	background-color:rgb(47, 14, 156);
+	border-bottom:2px solid hsl(0, 0%, 94%);
+	color:#ffff;
+	font-family:calibri;
+}
+.top div{
+	width:1200px;
+	color:#ffff;
+	background-color:rgb(174, 167, 241);
+	font-family:calibri;
+	padding:10px;
+	text-align:right;
+}
+
+.logo{
+	width:100%;
+	background-color:#ffff;
+	border-bottom:2px solid ;	
+}
+.logo div{
+	width:1200px;
+	background-color:#ffff;
+	font-family:calibri;
+	padding:10px;
+	text-align:left;
+}
+.logo div table a{
+	padding:10px;
+	text-decoration:none;
+	color:gray;
+}
+.logo div table a:hover{
+	color:#428bca;
+	border-bottom:2px solid gray;
+}
+
+.middle{
+	width:100%;
+	border-bottom:2px solid #f0f0f0;
+}
+.middle div{
+	width:1200px;
+	height:400px;
+	font-family:calibri;
+}
+.middle div p{
+	width:1000px;
+	font-weight:bold;
+	height:300px;
+	color:#fff;
+	opacity:0.2;
+	font-size:50px;
+	background-color:#000;
+}
+
+.bottom{
+	width:100%;
+	background-color:rgb(47, 14, 156);
+	border-bottom:2px solid #f0f0f0;
+}
+.bottom div{
+	width:1200px;
+	color:#fff;
+	background-color:#fff;
+	font-family:calibri;
+	text-align:right;
+}
+.bottom div table{
+	padding-top:30px;
+	width:1100px;
+	text-align:justify;
+	color:gray;
+	font-size:20px;
+}
+
+.bottom_up{
+	width:100%;
+	background-color:rgb(47, 14, 156);
+	border-bottom:2px solid #f0f0f0;
+	color:#fff;
+}
+.bottom_up div{
+	padding-top:20px;
+	width:1200px;
+	text-align:center;
+	background-color:rgb(1, 3, 120);
+	font-family:forte;
+	font-size:30px;
+	padding-bottom:20px;
+}
+.bottom_up div table{
+	padding-top:30px;
+	font-size:30px;
+	width:1100px;
+	text-align:center;
+	background-color:rgb(54, 92, 163);
+	font-family:calibri;
+	
+}
+
+input[type="text"]{
+	padding:12px;
+	width:250px;
+}
+select{
+	padding:12px;
+	width:250px;
+}
+textarea{
+	padding:50px;
+	width:550px;
+}
+.buttn{
+	width:550px;
+	padding:10px;
+	color:#fff;
+	font-size:20px;
+	background-color:#2FA5EB !important;
+}
+
+
+.nav_down{
+	width:100%;
+	background-color:#0f1112 !important;
+	border-bottom:2px solid #f0f0f0;
+}
+.nav_down div{
+	width:1200px;
+	color:#fff;
+	background-color:rgb(47, 14, 156);
+	font-family:calibri;
+	padding:10px;
+	text-align:left;
+}
+
+/* div tag for the main navigation */
+.section_main_navigation{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+	margin: auto;
+    width: 70%;
+    padding: 10px;	
+}
+/* unordered list for the main navigation */
+.ul_navigation {
+    list-style-type: disc;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+   	text-decoration:none;
+	text-align:right;
+	color:#F00;
+}
+/* remove underline off links for the main navigation */
+a:link{
+	text-decoration:none;
+	color:#0F6;
+}
+	
+a:visited{
+	color:#0F6;
+}
+
+.li_menu{
+    display: block;
+    color: #3b5998;
+    padding: 8px 16px;
+    text-decoration:none;
+	display:inline;
+	font-size:16px;
+	
+}
+
+
+.li_home {
+    display: block;
+    color: #0F0;
+    padding: 8px 16px;
+    text-decoration:none;
+	display:inline;
+	font-size:16px;
+	
+}
+
+.li_menu {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+.li_gallery {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+
+.li_contactus {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+
+.li_signin {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+
+.li_cart {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+}
+
+/* Change the link color in the main navigation on hover */
+
+li a:hover {
+    background-color: #0FF;
+    color: white;
+	
+}
+
+
+
+.mySlides{
+	
+	display:none;
+}
+
+.section_home_slider{
+    margin: auto;
+    width: auto;
+	height:auto;
+    padding: 10px;
+}
+.section_main_search{
+    text-align: center;
+    margin: 24px 0 12px 0;
+	text-align:center;
+    width: 70%;
+	margin: auto;
+	background-position:top;
+	
+}
+
+/* Bordered form */
+div.section_login {
+   
+	width:500px;
+	height:300px;
+	width:30%;
+	margin:auto;
+	
+	
+}
+
+.lbl_signin_welcome{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	font-weight:600;
+	color:#0F6;
+}
+
+/* Full-width inputs */
+.txt_signin_user, .txt_signin_pass {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btn_login{
+    background-color: #0F6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons *
+button:hover {
+	 background-color: #000;
+    color: white;
+}
+
+/* Extra style for the cancel button (red) */
+.btn_cancel {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #0F6;
+	border: none;
+    cursor: pointer;
+	margin: 8px 0;
+	color: white;
+	
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+	border: 3px solid #f1f1f1;
+    padding: 16px;
+	text-align:left;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: inherit;
+	display:inline;
+    padding-top: 16px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+span.signup {
+    float:right;
+	display:inline;
+    padding-top: 16px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:right;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+p_accnt{
+	color:#00F;
+	
+}
+
+/* Styling the signup form */
+.section_signup{
+	width:500px;
+	height:300px;
+	width:30%;
+	margin:auto;
+	
+	
+}
+.btn_register{
+	width: 100%;
+    padding: 10px 18px;
+    background-color: #0F6;
+	border: none;
+    cursor: pointer;
+	margin: 8px 0;
+	color: white;
+	
+	
+}
+/* Full-width inputs */
+.txt_signup_email, .txt_signup_reenteremail, .txt_signup_pass, .txt_signup_reenterpass, .txt_signup_fname, .txt_signup_fname, .txt_signup_phone {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Form for the shop page body section */
+.form_shop_body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+
+.btn_search{
+	width:86px;
+	background-color:#8b9dc3;
+    color: white;
+    padding: 5px 15px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_more{
+	width:50px;
+	background-color:#8b9dc3;
+    color: white;
+    padding: 5px 15px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+	text-decoration:none;
+	
+	
+}
+
+.txt_price_min, .txt_price_max{
+	width:82px;
+	
+	
+}
+
+.dropdown_make, .dropdown_model, .dropdown_color{
+	width:86px;
+    overflow: hidden;
+    background: #0F6;
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    border-radius:2px;
+	
+ 
+}
+
+.text_shopby{
+	font-size:16px;
+}
+
+.ul_navigation .current{
+	background-color:#0F6;
+	color:#FFF;
+}
+.ul_navigation .menuclass{
+	background-color:#0F6;
+	color:#FFF;
+}
+
+.btn_shop{
+    background-color:#0F9;
+    color: white;
+    padding: 5px 15px;
+    margin: 7px 0;
+    border: none;
+    cursor: pointer;
+    width: 86px;
+}
+
+.btn_send{
+    background-color: #0F6;
+    color: white;
+    padding: 5px 15px;
+    margin: 7px 0;
+    border: none;
+    cursor: pointer;
+    width: 450px;
+}
+
+.txt_contactus_email{
+	border-top:hidden;
+	border-left:hidden;
+	border-right:hidden;	
+	border-bottom-color:#0F6;
+	width: 450px;
+	
+}
+
+.txt_contactus_name{
+	border-top:hidden;
+	border-left:hidden;
+	border-right:hidden;	
+	border-bottom-color:#0F6;
+	
+}
+
+.txt_contactus_subject{
+	border-top:hidden;
+	border-left:hidden;
+	border-right:hidden;	
+	border-bottom-color:#0F6;
+	
+}
+.txt_item_code{
+	width:100%;
+	border-color:#0F6;
+	border:1;
+	background: #F8F8F8;
+	border: 1px solid #DDDDDD;
+  
+    border-radius:2px;
+}
+	
+	
+.txt_contactus_message{
+	width: 450px;
+	border-color:#0F6;
+	border:1;
+
+}
+.text_contactus_contactus{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:xx-large;
+	color:#0F6;
+}
+.text_contactus_ouremail{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-decoration:underline;
+	color:#0F6;
+	
+}
+
+.text_contactus_number{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#0F6;
+	
+}
+
+.text_contactus_address{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#0F6;
+	font-weight:550;
+}
+
+.lbl_shop_shopby{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:550;
+	color:#0F6;
+	
+}
+.text_signin_uname, .text_signin_pass{
+	font-family:Verdana, Geneva, sans-serif;
+	
+}
+.lbl_signin_remember{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+.lbl_cart_mycart{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:xx-large;
+	color:#066;
+}
+
+.lbl_cart_product{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+.lbl_cart_back{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+	
+}
+
+
+.lbl_cart_product_name{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	
+}
+
+.lbl_cart_product_removeitem{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-decoration:underline;
+	color:#F00;
+	
+}
+.btn_checkout{
+	width: 100%;
+    padding: 10px 18px;
+    background-color: #0F6;
+	border: none;
+    cursor: pointer;
+	color: white;
+}
+
+.txt_cart_quantity{
+	width:82px;
+}
+
+.lbl_cart_statement{
+	font-size:12px;
+	font-style:italic;
+}
+
+.dropdown_addcart_color{
+	width:100px;
+	overflow: hidden;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    border-radius:2px;
+}
+.dropdown_type{
+	width:100%;
+	overflow: hidden;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+  
+    border-radius:2px;
+}
+.txt_addcart_qty{
+	width:40px;
+}
+
+.footer{
+	background-color:#dfe3ee;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;	
+}
+
+.dropdown_user_type{
+	width:100%;
+	overflow: hidden;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    border-radius:2px;
+}
+.lbl_backend_topbutton
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:28px;
+	color:#3b5998;	
+}
+.lbl_backend_topbutton1
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#3b5998;	
+}
+
+
+.lbl_backends_lower_buttons
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:26px;
+	border-color:#000;
+	border:thin;
+	margin: 50px 50px 50px 50px;
+	
+	font-weight:bold;
+}
+.lbl_backend_lowerbuttons{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	color: #3b5998;
+}
+
+.lbl_backend_reports_button{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;
+	color: #3b5998;
+}	
+h1
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:40px;
+	color:rgb(41, 0, 144);
+	text-align:center;
+}
+h2
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+	color:#3b5998;
+	font-weight:400;
+	text-decoration:underline;
+}
+h3
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:20px;
+	color:rgb(37, 7, 144);
+}
+.lbl_backend
+{
+	font:Verdana, Geneva, sans-serif;
+	font-size:21px;
+	color:#009;
+	
+	
+}
+.Motto
+{
+	font-family:calibri;
+	font-size:21px;
+	color:rgb(252, 252, 252);
+	background-color:rgb(47, 14, 156);;
+	text-align: center;
+	font-style:oblique;
+	
+}
+.block {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: rgb(47, 14, 156);
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+  }
+/* Container needed to position the button. Adjust the width as needed */
+.containerr {
+	position: relative;
+	width: 80%;
+	height: 500px;
+  }
+  
+
+  /* Make the image responsive */
+  .containerr img {
+	width: 80%;
+	height: 800px;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .btn1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: rgb(237, 241, 241);
+	color: rgb(29, 28, 28);
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+  }
+  
+ .btn1:hover {
+	background-color:#0F6;
+  }
+
+body{
+font-family: 'lato', sans-serif;
+height: 100vh;
+}
+.ccontainer{
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 80vh;
+}
+.left-slide{
+	height: 100%;
+	width: 35%;
+    position: absolute;
+	top: 0;left: 0;
+	transition: transform .5s ease-in-out;
+}
+.left-slide>div{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.left-slide h1{
+	font-size: 40px;
+	text-align: center;
+	padding-left: 10%;
+	margin-bottom: 30px;
+	margin-top: 80px;
+	color: #0FF;
+}
+.right-slide{
+	position: absolute;
+	height: 100%;
+	width: 65%;
+	top: 0;left: 35%;
+	transition: transform .5s ease-in-out;
+}
+.right-slide>div{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+}
+.ccontainer .action-buttons button{
+position: absolute;
+left: 35%;
+top: 50%;
+z-index: 100;
+}
+button{
+	background-color: #FFF;
+	border: none;
+	color:#aaa;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 15px;
+}
+.ccontainer .action-buttons .down-button{
+	transform: translateX(-100%);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.ccontainer .action-buttons .up-button{
+	transform: translateY(-100%);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+button:hover{
+	color: #777;
+	transition: .7s;
+}
+button:focus{
+	outline: none;
+}
+/* Dropdown Button */
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+  }
+  .middle2{
+	width:100%;
+	border-bottom:2px solid #f0f0f0;
+}
+.containerrr {
+	background-color: rgb(104, 52, 225);
+  }

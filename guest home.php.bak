@@ -1,0 +1,79 @@
+
+<html>
+	<head>
+	</head>
+	<body>
+		<div class="ccontainer">
+			<div class = "left-slide">
+				<div style="background-color: #fde;">
+				 <h1>We have lot of options for you!</h1>
+				 <p>Winton 1</p>
+				</div>
+				<div style="background-color: rgb(254, 160, 0);">
+				 <h1>Pink Cherrish 1</h1>
+				 <p>Winton 2</p>
+				</div>
+				<div style="background-color:rgb(231, 58, 95);">
+				 <h1>Pink Cherrish 2</h1>
+				 <p>Winton 3</p>
+				</div>
+				<div style="background-color:rgb(176, 135, 240);">
+				 <h1>Pink Cherrish 3</h1>
+				 <p>Winton 4</p>
+				</div>
+			</div>
+			<div class="right-slide">
+				<div style="background-image:url('Image/I1.webp');"></div>
+				<div style="background-image:url('Image/G2.webp');"></div>
+				<div style="background-image:url('Image/G3.jpg');"></div>
+				<div style="background-image:url('Image/G1.jpg');"></div>
+			</div>
+			<div class="action-buttons">
+				<button class="down-button">
+					<i class="fas fa-arrow-down"></i>
+				</button>
+				<button class="up-button">
+					<i class="fas fa-arrow-up"></i>
+				</button>
+			</div>
+		</div>
+		
+		
+<script>
+			const sliderccontainer = document.querySelector('.ccontainer');
+			const slideRight	   = document.querySelector('.right-slide');
+			const slideLeft 	   = document.querySelector('.left-slide');
+			const upButton 		   = document.querySelector('.up-button');
+			const downButton	   = document.querySelector('.down-button');
+			const slidesLength = slideRight.querySelectorAll('div').length;
+			let activeSlideIndex = 0;
+			slideLeft.style.top = `-${(slidesLength - 1) * 100}vh` ;
+			upButton.addEventListener("click", () => changeSlide('up')) ;
+			downButton.addEventListener('click', () => changeSlide('down')) ;
+			const changeSlide = (direction) => 
+			{
+				const sliderHeight = sliderccontainer.clientHeight ;
+				if (direction === 'up')
+				{
+					activeSlideIndex++ 
+					if (activeSlideIndex > slidesLength - 1) 
+					{
+						activeSlideIndex = 0 
+					}
+				} 
+				else if(direction === 'down')
+				{
+					activeSlideIndex-- 
+					if (activeSlideIndex < 0) 
+					{
+						activeSlideIndex = slidesLength - 1	;
+					}
+				}
+				slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
+				slideLeft.style.transform =  `translateY(${ activeSlideIndex * sliderHeight}px)`	
+			}
+</script>
+		
+	</body>
+</html>
+

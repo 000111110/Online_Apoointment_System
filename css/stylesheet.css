@@ -1,0 +1,612 @@
+@charset "utf-8";
+/* CSS Document */
+.logofinal{
+	position:absolute;
+	width:150px;
+	height:150px; 
+	
+}
+
+/* div tag for the main navigation */
+.section_main_navigation{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+	margin: auto;
+    width: 70%;
+    padding: 10px;
+		
+}
+/* unordered list for the main navigation */
+.ul_navigation {
+    list-style-type: disc;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+   	text-decoration:none;
+	text-align:right;
+	color:#F00;
+	
+	
+	
+}
+/* remove underline off links for the main navigation */
+a:link{
+	text-decoration:none;
+	color:#0F6;
+}
+a:visited{
+	color:#0F6;
+}
+
+.li_menu{
+    display: block;
+    color: #3b5998;
+    padding: 8px 16px;
+    text-decoration:none;
+	display:inline;
+	font-size:16px;
+	
+}
+
+
+.li_home {
+    display: block;
+    color: #0F0;
+    padding: 8px 16px;
+    text-decoration:none;
+	display:inline;
+	font-size:16px;
+	
+}
+
+.li_menu {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+.li_gallery {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+
+.li_contactus {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+
+.li_signin {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+}
+
+.li_cart {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+	font-size:16px;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	display:inline;
+}
+
+/* Change the link color in the main navigation on hover */
+
+li a:hover {
+    background-color: #0FF;
+    color: white;
+	
+}
+
+
+
+.mySlides{
+	
+	display:none;
+}
+
+.section_home_slider{
+    margin: auto;
+    width: auto;
+	height:auto;
+    padding: 10px;
+}
+.section_main_search{
+    text-align: center;
+    margin: 24px 0 12px 0;
+	text-align:center;
+    width: 70%;
+	margin: auto;
+	background-position:top;
+	
+}
+
+/* Bordered form */
+div.section_login {
+   
+	width:500px;
+	height:300px;
+	width:30%;
+	margin:auto;
+	
+	
+}
+
+.lbl_signin_welcome{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	font-weight:600;
+	color:#0F6;
+}
+
+/* Full-width inputs */
+.txt_signin_user, .txt_signin_pass {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btn_login{
+    background-color: #0F6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons *
+button:hover {
+	 background-color: #000;
+    color: white;
+}
+
+/* Extra style for the cancel button (red) */
+.btn_cancel {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #0F6;
+	border: none;
+    cursor: pointer;
+	margin: 8px 0;
+	color: white;
+	
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+	border: 3px solid #f1f1f1;
+    padding: 16px;
+	text-align:left;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: inherit;
+	display:inline;
+    padding-top: 16px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+
+span.signup {
+    float:right;
+	display:inline;
+    padding-top: 16px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:right;
+
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+p_accnt{
+	color:#00F;
+	
+}
+
+/* Styling the signup form */
+.section_signup{
+	width:500px;
+	height:300px;
+	width:30%;
+	margin:auto;
+	
+	
+}
+.btn_register{
+	width: 100%;
+    padding: 10px 18px;
+    background-color: #0F6;
+	border: none;
+    cursor: pointer;
+	margin: 8px 0;
+	color: white;
+	
+	
+}
+
+
+
+
+
+/* Full-width inputs */
+.txt_signup_email, .txt_signup_reenteremail, .txt_signup_pass, .txt_signup_reenterpass, .txt_signup_fname, .txt_signup_fname, .txt_signup_phone {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Form for the shop page body section */
+.form_shop_body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+}
+
+.btn_search{
+	width:86px;
+	background-color:#8b9dc3;
+    color: white;
+    padding: 5px 15px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_more{
+	width:50px;
+	background-color:#8b9dc3;
+    color: white;
+    padding: 5px 15px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+	text-decoration:none;
+	
+	
+}
+
+.txt_price_min, .txt_price_max{
+	width:82px;
+	
+	
+}
+
+.dropdown_make, .dropdown_model, .dropdown_color{
+	width:86px;
+    overflow: hidden;
+    background: #0F6;
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    border-radius:2px;
+	
+ 
+}
+
+.text_shopby{
+	font-size:16px;
+}
+
+.ul_navigation .current{
+	background-color:#0F6;
+	color:#FFF;
+}
+.ul_navigation .menuclass{
+	background-color:#0F6;
+	color:#FFF;
+}
+
+.btn_shop{
+    background-color:#0F9;
+    color: white;
+    padding: 5px 15px;
+    margin: 7px 0;
+    border: none;
+    cursor: pointer;
+    width: 86px;
+}
+
+.btn_send{
+    background-color: #0F6;
+    color: white;
+    padding: 5px 15px;
+    margin: 7px 0;
+    border: none;
+    cursor: pointer;
+    width: 450px;
+}
+
+.txt_contactus_email{
+	border-top:hidden;
+	border-left:hidden;
+	border-right:hidden;	
+	border-bottom-color:#0F6;
+	width: 450px;
+	
+}
+
+.txt_contactus_name{
+	border-top:hidden;
+	border-left:hidden;
+	border-right:hidden;	
+	border-bottom-color:#0F6;
+	
+}
+
+.txt_contactus_subject{
+	border-top:hidden;
+	border-left:hidden;
+	border-right:hidden;	
+	border-bottom-color:#0F6;
+	
+}
+.txt_item_code{
+	width:100%;
+	border-color:#0F6;
+	border:1;
+	background: #F8F8F8;
+	border: 1px solid #DDDDDD;
+  
+    border-radius:2px;
+}
+	
+	
+.txt_contactus_message{
+	width: 450px;
+	border-color:#0F6;
+	border:1;
+
+}
+.text_contactus_contactus{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:xx-large;
+	color:#0F6;
+}
+.text_contactus_ouremail{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	text-decoration:underline;
+	color:#0F6;
+	
+}
+
+.text_contactus_number{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#0F6;
+	
+}
+
+.text_contactus_address{
+	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#0F6;
+	font-weight:550;
+}
+
+.lbl_shop_shopby{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	font-weight:550;
+	color:#0F6;
+	
+}
+.text_signin_uname, .text_signin_pass{
+	font-family:Verdana, Geneva, sans-serif;
+	
+}
+.lbl_signin_remember{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+.lbl_cart_mycart{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:xx-large;
+	color:#066;
+}
+
+.lbl_cart_product{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+}
+.lbl_cart_back{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	
+	
+}
+
+
+.lbl_cart_product_name{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	
+}
+
+.lbl_cart_product_removeitem{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-decoration:underline;
+	color:#F00;
+	
+}
+.btn_checkout{
+	width: 100%;
+    padding: 10px 18px;
+    background-color: #0F6;
+	border: none;
+    cursor: pointer;
+	color: white;
+}
+
+.txt_cart_quantity{
+	width:82px;
+}
+
+.lbl_cart_statement{
+	font-size:12px;
+	font-style:italic;
+}
+
+.dropdown_addcart_color{
+	width:100px;
+	overflow: hidden;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    border-radius:2px;
+}
+.dropdown_type{
+	width:100%;
+	overflow: hidden;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+  
+    border-radius:2px;
+}
+.txt_addcart_qty{
+	width:40px;
+}
+
+.footer{
+	background-color:#dfe3ee;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;	
+}
+
+.dropdown_user_type{
+	width:100%;
+	overflow: hidden;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    height: 30px;
+    border-radius:2px;
+}
+.lbl_backend_topbutton
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:28px;
+	color:#3b5998;	
+}
+.lbl_backend_topbutton1
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#3b5998;	
+}
+
+
+.lbl_backends_lower_buttons
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:26px;
+	border-color:#000;
+	border:thin;
+	margin: 50px 50px 50px 50px;
+	
+	font-weight:bold;
+}
+.lbl_backend_lowerbuttons{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:24px;
+	color: #3b5998;
+}
+
+.lbl_backend_reports_button{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;
+	color: #3b5998;
+}
+
+	
+	
+h1
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:40px;
+	color:#3b5998;
+}
+h2
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:18px;
+	color:#3b5998;
+	font-weight:400;
+	text-decoration:underline;
+}
+h3
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:20px;
+	color:#39C;
+}
+
+	
+	
+.lbl_backend
+{
+	font:Verdana, Geneva, sans-serif;
+	font-size:21px;
+	color:#009;
+	
+	
+}

@@ -1,0 +1,104 @@
+<html>
+<head>
+	<title> Wintan Hospital </title>
+	
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<div class="top">
+		<div>
+		 Contact Us +94 21222 2222 | wintan@hospital.com 
+		</div>
+	</div>
+	
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="500px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> Wintan  </font><font color="#000"> Hospital</font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="index.php">HOME</a> 
+							<a href="about.php">ABOUT US</a>  
+							<a href="service.php">SERVICE</a>
+							<a href="doctor.php">DOCTORS</a>
+							<a href="gallery.php">GALLERY</a>							
+							<a href="contact.php">CONTACT US</a>
+							<a href="login.php">LOGIN</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000"> Welcome to Wintan Hospital </font> <br> <br>
+
+					<font color="#000" size="6px"> Best Medical & Health care Needs to Our Patients </font> <br> <br>
+					
+					We Have Medicare Plan Options for You! </font> <br> <br>
+					We are one of the leading private hospital in Sri Lanka. The vision of our hospital is providing ancillary services to the cancer hospital and caters to the Maharagama, Kesbewa and Polliyandala electorates.
+					
+					 <br><br>
+					
+					 Winton Hospital and Multipurpose Health Service is an 16-bed, co-located general medical practice offering a range of emergency, inpatient, and primary and allied health services.<br> <br>
+					 The facility includes a six bed flexible, residential aged care service.
+
+					<br><br>
+					
+					General Practitioner services are delivered through the Winton Medical Practice, corner of Bloomfield and Oondooroo Streets, Winton.
+
+ <br><br>
+
+<br>
+ </td>
+					
+					
+					<td style="padding-left:20px;"> <img src="image/G2.webp" width="400px"></td>
+				</tr>
+			
+				
+			</table>
+		</div>
+	</div>
+	
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000">Address </font> <br> <br>
+
+					<font color="#000" size="6px"> Wintan Hospital & Research Center </font> <br> <br>
+
+100, 1st Cross Street, Vembady Road,<br>Jaffna, <br> Srilanka. <br> Contact No - +94 21222 2222 <br> Email: Wintanh@hospital.com<br><br>
+
+
+<br>
+ </td>
+					
+					
+					<td style="padding-left:20px;"> </td>
+				</tr>
+			
+				
+			</table>
+		</div>
+	</div>
+	
+	
+	<div class="nav_down">
+		<div>
+		 &copy; Wintan Hospital, site designed & developed by THARE_VASTE 
+		</div>
+	</div>
+	

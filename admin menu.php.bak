@@ -1,0 +1,25 @@
+
+<html>
+	<head> </head>
+	<body>
+		<td width="41%"> <br> <br>
+			<font size="3px"> 
+				<a href="index.php?pg=guest home.php">HOME</a> 
+				<a href="index.php?pg=doctor.php&option=view">DOCTORS</a> 
+				<a href="index.php?pg=patients.php&option=view">PATIENTS</a>
+				<a href="#">APPOINTMENTS</a>
+				<?php
+						if($this_system_usertype=="guest")
+						{
+							echo "<a href='index.php?pg=login.php'>LOGIN</a>";
+						}
+						else
+						{
+							echo "<a href='logout.php'>LOGOUT</a><br>";
+						}
+				?>
+			</font>
+		</td>
+	</body>
+</html>
+
